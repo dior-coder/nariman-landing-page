@@ -1,0 +1,54 @@
+* {
+  outline: none;
+}
+body {
+  background-color: #282b38;
+}
+.fs-4 {
+  color: var(--bs-light);
+}
+.start-20 {
+  left: 20% !important;
+}
+hr {
+  position: relative;
+  left: 46%;
+  opacity: 1;
+}
+.container > .card {
+  margin: 0 50px 0 50px;
+}
+.hero-section {
+  height: 60vh;
+  min-height: 400px;
+}
+.hero-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.service-card {
+  background-color: rgba(54, 58, 77, 1);
+  margin-bottom: 20px;
+}
+.navbar {
+  padding: 0.8rem 0;
+}
+.nav-link {
+  padding: 0.5rem 1rem !important;
+}
+.hr-left {
+    position: relative;
+    left: auto;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 50vh;
+  }
+  .hero-content {
+    width: 90% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center;
+  }
+}

@@ -38,8 +38,43 @@ hr {
   padding: 0.5rem 1rem !important;
 }
 .hr-left {
-    position: relative;
-    left: auto;
+  position: relative;
+  left: auto;
+}
+
+/* Кастомные стили для блока отзывов */
+.reviews-scroll-container {
+  position: relative;
+}
+
+.reviews-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #e58d35 #f8f9fa;
+}
+
+.reviews-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.reviews-scroll::-webkit-scrollbar-track {
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.reviews-scroll::-webkit-scrollbar-thumb {
+  background-color: #e58d35;
+  border-radius: 10px;
+}
+
+/* Скрыть скроллбар на мобильных */
+@media (max-width: 768px) {
+  .reviews-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .reviews-scroll::-webkit-scrollbar {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .hero-section {
